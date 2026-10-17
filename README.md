@@ -1,56 +1,37 @@
-# Welcome to your Expo app 👋
+# Fortune Teller - Mobile Application Lab 02 🔮
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a React Native mobile application built as part of the Mobile Application Development course (Academic Year 2024/2025, Semester 2) at the University of Kelaniya[cite: 1]. The application serves as an interactive "Fortune Teller" using Expo Router for navigation[cite: 13, 14, 16].
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 What We Built During This Lab Session
 
-   ```bash
-   npm install
-   ```
+* **Android Emulator Setup:** Configured and launched a virtual Android device (Pixel 4 / API 37.2) via Android Studio and the command line[cite: 5, 7].
+* **Expo React Native Project:** Initialized a clean React Native application using Expo Router and organized the source folder structure (`src/app/`)[cite: 8, 9].
+* **Stack Navigation (`_layout.tsx`):** Implemented file-based stack navigation to manage screen transitions and header titles seamlessly[cite: 13].
+* **Home Screen (`index.tsx`):** Built a welcome interface featuring custom styling, a profile image, an informative description box, and a routing button to trigger the fortune reveal[cite: 14, 15].
+* **Reveal Screen (`reveal.tsx`):** Created a dynamic second screen displaying a randomized programming fortune with a custom-styled card view and a "Go Back" navigation button[cite: 16].
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tech Stack & Tools
 
-In the output, you'll find options to open the app in a
+* **Framework:** React Native (Expo)[cite: 1]
+* **Routing:** Expo Router (File-based navigation)[cite: 9, 13]
+* **Language:** TypeScript / JavaScript[cite: 12, 14]
+* **Environment:** Android Studio Emulator & Expo Go[cite: 1, 10]
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📦 Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```text
+FortuneTeller/
+├── src/
+│   └── app/
+│       ├── _layout.tsx    # Stack navigation layout & header titles[cite: 13]
+│       ├── index.tsx      # Welcome & home screen[cite: 14]
+│       └── reveal.tsx     # Fortune display screen[cite: 16]
+├── assets/                # App images and icons
+├── package.json           # Dependencies and scripts
+└── README.md              # Project documentation
